@@ -21,6 +21,6 @@ public class AuthController {
     @GetMapping("/auth")
     public ResponseEntity<String> auth(@RequestParam("token") String token) {
         System.out.println(token);
-        return new ResponseEntity<String>("authenticated", HttpStatus.OK);
+        return new ResponseEntity<String>("user=authenticated\nshrstaffid=4468353120", HttpStatus.OK);
     }
 }
